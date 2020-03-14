@@ -57,8 +57,9 @@ img {
 }
 
 #ivsPokemon{
-    height: 120px;    
-    margin-top: 30px;
+    /* height: 120px;     */
+    /* margin-top: 30px; */
+    /* background-color: green; */
 }
 
 .nome {
@@ -77,3 +78,16 @@ img {
     margin: 20px 0;
     text-align: center;
 }
+#campos{
+    /* margin: 0 auto; */
+    width: 200px;
+    display: flex;
+    /* flex-direction: column; */
+    margin-top: 20px;
+    margin-left: 150px;
+}
+.campos{
+    margin-top: 5px;
+    /* text-align: center; */
+}
+
