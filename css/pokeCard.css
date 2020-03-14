@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#card, #imagem, #status {
+    margin: 0 auto;
+}
+
+#card {
+    width: 300px;
+    height: 450px;
+    background-color: #f22613;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+#imagem {
+    height: 50%;
+    background-color: #fde3a7;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+
+img {
+    width: 100px;
+    margin-top: 10%;
+}
+
+#status {
+    background-color: #e87e04;
+    height: 50%;
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
+}
+
+#tipo {
+    width: 100px;
+    height: 30px;
+    background-color: #d35400;
+    position: absolute;
+    border-radius: 5px;
+    margin-top: -15px;
+    margin-left: 10px;
+    text-align: center;
+    color: white;
+    font-style: italic;
+    border: 1px solid black;
+}
+
+#status p {
+    font-style: oblique;
+    color: black;
+    height: 10px;
+    font-size: 20px;
+}
+
+#ivsPokemon{
+    height: 120px;    
+    margin-top: 30px;
+}
+
+.nome {
+    text-align: center;
+    font-weight: bold;
+    font-size: 300px;
+}
+
+#novosCards{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#areaBotao{
+    margin: 20px 0;
+    text-align: center;
+}
