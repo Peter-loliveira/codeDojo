@@ -4,16 +4,50 @@ var botao = document.getElementById("btAddCard")
 botao.onclick = function () {
     gerarCard()
 }
-var Card = document.getElementById("teste")
+var Card = document.getElementById("areaTotalCard")
+
+
 
 function gerarCard() {
-    // crio um Button em vez de uma DIV para que fiquem um ao lado do outro
     let novoCard = document.createElement("button")
     novoCard.style.border = "0"
     novoCard.style.backgroundColor = "white"
-    
-    novoCard.innerHTML = Card.innerHTML
-    
+
+    let preencherDados = document.getElementById("CheckNovoCard")
+    if (preencherDados.checked) {
+        let linkImagem = document.getElementById("url").value
+        let tipo = document.getElementById("novoTipo").value
+        let novoNome = document.getElementById("novoNome").value
+        let novoPoder = document.getElementById("novoPoder").value
+        let novoDano = document.getElementById("novoDano").value
+        let novoAtaque = document.getElementById("novoAtaque").value
+        let novaEvolucao = document.getElementById("novaEvolucao").value        
+        var htmlPokemon = 
+        `
+        <div id="card">
+        <div id="imagem">
+            <img src="${linkImagem}" alt="" srcset="">
+        </div>
+        <div id="tipo">
+            <h4>${tipo}</h4>
+        </div>
+        <div id="status">
+            <p id="nome" class="nome">${novoNome}</p>
+            <div id="ivsPokemon">
+                <p id="poder">Poder: ${novoPoder}</p>
+                <p id="dano">Dano: ${novoDano}</p>
+                <p id="ataque">Ataque: ${novoAtaque}</p>
+                <p id="evolucao">Evolução: ${novaEvolucao}</p>
+            </div>
+            <p class="nome">Pokesystem 2.0</p>
+        </div>
+    </div>
+        `
+        novoCard.innerHTML = htmlPokemon
+    } else {        
+        novoCard.innerHTML = Card.innerHTML
+    }
+
     AreaNovosCards.appendChild(novoCard)
 }
 

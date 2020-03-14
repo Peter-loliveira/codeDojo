@@ -3,8 +3,10 @@
     padding: 0;
 }
 
-#card, #imagem, #status {
+#card, #imagem, #status, #campos, #areaBotao, #areaTotalCard, .areaDosCampos{
     margin: 0 auto;
+    text-align: center;
+    
 }
 
 #card {
@@ -35,9 +37,16 @@ img {
     border-radius: 0 0 5px 5px;
 }
 
+#status p {
+    font-style: oblique;
+    color: black;
+    height: 10px;
+    font-size: 20px;
+}
+
 #tipo {
-    width: 100px;
-    height: 30px;
+    /* width: 100px; */
+    height: 35px;
     background-color: #d35400;
     position: absolute;
     border-radius: 5px;
@@ -47,13 +56,7 @@ img {
     color: white;
     font-style: italic;
     border: 1px solid black;
-}
-
-#status p {
-    font-style: oblique;
-    color: black;
-    height: 10px;
-    font-size: 20px;
+    padding: 0 10px 3px 10px ;
 }
 
 #ivsPokemon{
@@ -79,15 +82,24 @@ img {
     text-align: center;
 }
 #campos{
-    /* margin: 0 auto; */
-    width: 200px;
-    display: flex;
-    /* flex-direction: column; */
     margin-top: 20px;
-    margin-left: 150px;
+    padding: 10px;
 }
 .campos{
     margin-top: 5px;
-    /* text-align: center; */
+    border: 1px solid black;
+    text-align: center;
 }
 
+#url{
+    width: 1080px;
+}
+
+.areaDosCampos{
+    width: 1200px;
+    padding: 10px;
+}
+
+button{
+    margin-left: 15px;
+}

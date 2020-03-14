@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div id="teste">
+    <div id="areaTotalCard">
         <div id="card">
             <div id="imagem">
                 <img src="img/pokemon.png" alt="" srcset="">
@@ -35,13 +35,21 @@
         </div>
     </div>
     <div id="campos">
-        <input id="novoTipo" class="campos" type="text" placeholder="Tipo">
-        <input id="novoNome" class="campos" type="text" placeholder="Nome">
-        <input id="novoPoder" class="campos" type="number" placeholder="Poder">
-        <input id="novoDano" class="campos" type="number" placeholder="Dano">
-        <input id="novoAtaque" class="campos" type="number" placeholder="Ataque">
-        <input id="novaEvolucao" class="campos" type="text" placeholder="Evolução">
-        <input id="url" class="campos" type="text" placeholder="Cole o link da Imagem">
+        <label>
+            <input id="CheckNovoCard" type="checkbox">
+            Criar novo CARD baseado nos dados abaixo
+        </label>
+        <div class="areaDosCampos">
+            <input  id="novoTipo" class="campos" type="text" placeholder="Tipo">
+            <input id="novoNome" class="campos" type="text" placeholder="Nome">
+            <input id="novoPoder" class="campos" type="number" placeholder="Poder">
+            <input id="novoDano" class="campos" type="number" placeholder="Dano">
+            <input id="novoAtaque" class="campos" type="number" placeholder="Ataque">
+            <input id="novaEvolucao" class="campos" type="text" placeholder="Evolução">
+        </div>
+        <div class="areaDosCampos">
+            <input id="url" class="campos" type="text" placeholder="Cole o link da Imagem">
+        </div>
     </div>
     <div id="areaBotao">
         <button id="btAddCard" class="btn btn-warning">Add Card</button>
